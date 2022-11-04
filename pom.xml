@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://13.233.83.124:9000/</sonar.host.url>
+		<sonar.host.url>http://15.206.93.165:9000/</sonar.host.url>
 		<sonar.login>squ_eb805c95d6d4a9e572f15df9d0acbf62e7ed60ce</sonar.login>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -103,7 +103,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Ram Snapshot Nexus Repository </name>
-	      <url>http://35.154.249.141:8081/repository/facebook-snapshot/</url>
+	      <url>http://3.108.41.179:8081/repository/facebook-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
