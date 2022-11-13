@@ -13,9 +13,9 @@ stage('Build'){
 sh "$mavenHome/bin/mvn  package"
 }
 
-/* stage('ExeSonarQubeGenerator'){
+stage('ExeSonarQubeGenerator'){
 sh "$mavenHome/bin/mvn clean sonar:sonar"
-} */
+}
 
 stage('UploadArtifactsIntoNexus'){
 sh "$mavenHome/bin/mvn  clean deploy"
