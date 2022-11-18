@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    
+    tools {
+  maven 'maven-3.8.6'
+}
+
+    stages {
+    
+//Get the code from GitHub
+    	
+        stage('CheckOutCode') {
+            steps {
+                git branch: 'development', credentialsId: 'c678bd0d-9fd5-42e3-88c2-ca3d4e398c6a', url: 'https://github.com/rkp-devops/maven-web-application.git'
+            }
+        }
+        
+//Build the artifact 
+        
+        stage('Build') {
+            steps {
+                sh "mvn clean package"
+            }
+        }
+    } //stage closing
+} //pipeline closing
