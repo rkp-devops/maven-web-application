@@ -10,8 +10,8 @@ options {
 }
 
 /* triggers {
-  cron '*/2 * * * *' */
-}
+  cron '*/2 * * * *' 
+} */
     stages {
     
 //Get the code from GitHub
