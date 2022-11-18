@@ -5,6 +5,10 @@ def mavenHome = tool name: 'maven-3.8.6'
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5'))])
 
+echo "The Node Name is : ${env.NODE_NAME}"
+echo "The Job Name is : ${env.JOB_NAME}"
+echo "The Build Number is : ${env.BUILD_NUMBER}"
+
 stage('CheckOutCode'){
 git branch: 'development', credentialsId: 'c678bd0d-9fd5-42e3-88c2-ca3d4e398c6a', url: 'https://github.com/rkp-devops/maven-web-application.git'
 }//CheckOutCode closing
