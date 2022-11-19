@@ -28,7 +28,7 @@ options {
         
 //SonarQube Report
         
-     /*   stage('SonatQube') {
+        stage('SonatQube') {
             steps {
                 sh "mvn sonar:sonar"
             }
@@ -40,7 +40,7 @@ options {
             steps {
                 sh "mvn clean deploy"
             }
-        }  */
+        }  
               
 //Copy the build file into the Tomcat 
         
